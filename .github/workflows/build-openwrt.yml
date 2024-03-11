@@ -42,11 +42,6 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
       
-    - name: Set up Go
-      uses: actions/setup-go@v5.0.0 # 虚拟环境搭建go环境
-      with:
-        go-version: 1.22 #指定1.22版本
-        
     - name: Initialization environment
       env:
         DEBIAN_FRONTEND: noninteractive
